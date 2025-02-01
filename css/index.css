@@ -1,0 +1,232 @@
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: #f6f6f6;
+            color: #5D87B1;
+            line-height: 1.6;
+            transform: translateX(0);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        body.slide-in {
+            transform: translateX(-100%);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .logo h2 {
+            font-size: 20px;
+            color: #5D87B1;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #305174;
+            color: #fff;
+        }
+
+        .hero {
+            text-align: center;
+        }
+
+        .hero img {
+            width: 100%;
+            max-height: 750px;
+            object-fit: cover;
+        }
+.products h1{
+    text-align: center;
+    font-size: 40px;
+    color: #305174;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #b2f3b5;
+    color: #356f3f;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.product-image {
+    width: auto;
+    height: 320px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+}
+
+
+.product-name {
+    font-size: 18px;
+    color: #305174;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #305174;
+}
+
+.product-discount {
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+
+.product-item h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.product-item .price {
+    font-size: 16px;
+    color: #555;
+}
+
+.promotions {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.promotions h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.promo-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.promo-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.promo-item img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover; 
+}
+
+.promo-item h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.promo-item h5 {
+    font-size: 15px;
+    color: #555;
+    margin-top: 5px;
+    text-align: center;
+}
+
+footer {
+    background-color: #305174;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+.product-item, .promo-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover, .promo-item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

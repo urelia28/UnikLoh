@@ -1,0 +1,95 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container textarea,
+.form-container input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #6dd5fa, #1e90ff);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background: blue;
+}
+
+.form-container .reset-button {
+    background: rgb(251, 113, 113);
+    margin-top: 10px;
+}
+
+.form-container .reset-button:hover {
+    background: red;
+}
+/* Gaya dasar untuk tombol */
+.btn {
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Gaya khusus untuk tombol outline-primary */
+  .btn-outline-primary {
+    background-color: transparent;
+    border: 2px solid #007bff; /* Warna biru */
+    color: #007bff;
+  }
+  
+  /* Efek hover untuk tombol outline-primary */
+  .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #0056b3; /* Warna biru lebih gelap */
+  }
+  
+  /* Margin untuk jarak tombol */
+  .my-3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
